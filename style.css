@@ -1,0 +1,444 @@
+
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    color: #666666;
+    background: #F6D155;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.main-container {
+    background-color: #F6D155;;
+    height: 29.7cm;
+    width: 21cm;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+} 
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+}
+
+.container-right {
+    margin-bottom: 5% !important;
+}
+
+a {
+    color: #222222;
+    transition: all .3s;
+}
+
+/* a:hover,
+a:active,
+a:focus {
+    color: #FF6F61;
+    outline: none;
+    text-decoration: none;
+} */
+
+.btn:focus {
+    box-shadow: none;
+}
+
+
+/**********************************/
+/************ Sidebar *************/
+/**********************************/
+
+    .sidebar {
+        position: sticky;
+        left: 0;
+        top: 0;
+        max-width: 200px;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        z-index: 1;
+    }
+    
+    .sidebar-header {
+        height: 6.5cm;
+    }
+
+    .sidebar-header img {
+        width: 100%;
+    }
+    
+
+    .sidebar-nav {
+        position: relative;
+        width: 100%;
+        float: left;
+        background: #222222;  
+    }
+    
+    nav ul {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+    
+    nav i {
+        float: right;
+        color: #FF6F61 !important;
+    }
+    
+    nav a {
+        color: white !important;
+    }
+    
+    nav a:hover,
+    nav a:active,
+    nav a:focus {
+        color: #FF6F61 !important;
+        outline: none;
+        text-decoration: none;
+    }
+
+    nav i:hover,
+    nav i:active,
+    nav i:focus {
+        color: white !important;
+        outline: none;
+        text-decoration: none;
+    }
+    
+    .sidebar-nav-title,
+    .checkbtn ,
+    #check {
+        display: none;
+    }
+
+ @media screen and (min-width: 769px) { 
+/* .sidebar-content {
+    padding: 20px 0;
+} */
+}
+
+@media screen and (max-width: 769px) {
+    /* .checkbtn {
+        font-size: 20px;
+        color: white;
+        float: right;
+        line-height 40px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }  */
+
+    .sidebar {
+        max-width: 150px;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+    .sidebar-header {
+        height: 6cm;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+}
+
+.pr-sidebar {
+    display: none;
+}
+
+/****************** container */
+.container-right {
+    position: relative;
+    top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index:0;
+    width: 75%;
+}
+
+/* header */
+
+
+#header {
+    background: white;
+    margin: 3% 0;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#header p:first-of-type {
+    color:#FF6F61 !important;
+    font-weight: bold;
+}
+
+#header p:last-of-type {
+    font-weight:normal;
+
+}
+.content-inner h1 {
+    color:#222222;
+    text-shadow: 50px;
+    padding-top: 0.5em;
+}
+
+/* main */
+.main {
+    background: white;
+    padding-left: 3%;
+    padding-top: 3%;
+
+}
+
+.main h2 {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.main p,
+.main a {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.about .btn {
+    background-color:#FF6F61;
+    padding: 2%;
+    float: right;
+    border: transparent;
+}
+
+.main a:hover,
+.main a:active,
+.main a:focus {
+    color: #FF6F61 !important;
+    background-color: #222222;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.fa-minus {
+    color:#FF6F61;
+}
+
+.about .content-presentation {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.about-img {
+    width: 30%;    
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-info {
+    width: 55%;
+    padding-top: 1em;
+}
+
+.about-info p {
+    text-align:justify;
+}
+
+.about-info p:last-of-type {
+    padding-bottom: 1em;
+}
+
+/* education, exp, skillsdetails */
+.main p,
+.main span,
+.main h3, 
+.main h4, 
+.main h5 {
+    font-size: 1em !important;
+}
+
+.content-presentation {
+    padding: 1% 0%;
+}
+
+
+.education,
+.experience,
+.SkillsDetails,
+.contact {
+    padding-top: 3%;
+}
+
+/* .edu-col,
+.exp-col {
+    padding: 20px 0 20px 20px; 
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
+} */
+
+.education .content-presentation,
+.experience .content-presentation, 
+.SkillsDetails .content-presentation,
+.contact .content-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.education .col,
+.experience .col, 
+.SkillsDetails .col {
+    width: 45%;
+}
+
+.education .col .fa,
+.experience .col .fa, 
+.SkillsDetails .col .fa {
+    font-size: 1.2em;
+}
+
+.exp-col {
+    width: 100%;
+}
+
+.education .col :first-child,
+.experience .col :first-child,
+.SkillsDetails .col :first-child,
+.contact .col :first-child {
+    padding-bottom: 5%;
+}
+
+.SkillsDetails i {
+    color: #FF6F61;
+}
+
+.contact i {
+    padding-right: 5%;
+}
+
+.social {
+    padding-top: 5%;
+}
+
+.social i {
+    color: #222222 !important;
+    padding: 1% !important;
+}
+
+.social i:hover,
+.social i:active,
+.social i:focus {
+    color: #FF6F61 !important;
+    background-color: #222222;
+    outline: none;
+    text-decoration: none;
+}
+
+.form .btn {
+    background-color:#FF6F61;
+    padding: 2.5% 2%;
+    margin-left: 0.1em;
+    float:left;
+    border: transparent;
+} 
+
+.form .btn:hover {
+    color: #FF6F61 !important;
+    background-color: #222222;
+
+}
+
+.link-no-bg {
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+.contact p {
+    padding-bottom: 0.9em;
+    font-size: 0.9em !important;
+}
+
+.contact {
+    padding-bottom: 2em;
+}
+
+.form-group {
+    padding: 0.1em;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+.contact .col {
+    width: 45%;
+}
+
+
+/* PRINTING SPECIFICS */
+@media print {
+    .experience {page-break-after: always;}
+
+    .container-right {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        height: 5cm;
+    }
+
+    .header .content-inner {
+        width: 75%;
+    }
+
+    .header-header {
+        width: 20%;
+        display: block;
+    }
+
+    .header-header img {
+        width: 80%;
+
+    } 
+
+    .contact {
+        display: none;
+    }
+
+
+  }
