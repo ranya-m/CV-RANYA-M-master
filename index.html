@@ -10,10 +10,10 @@
     <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Fonts -->
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- Font awesome Icons -->
     <link
@@ -36,12 +36,14 @@
         </div>
 
         <div class="sidebar-content">
-          <nav class="sidebar-nav">
-            <input type="checkbox" id="check" />
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <label class="sidebar-nav-title">Navigation</label>
+        <nav class="sidebar-nav"> 
+
+            <div class="navToggle">
+              <h3 id="navigation" class="hide">Navigation</h3>
+              <i class="fas fa-bars hide"></i>
+            </div>        
+
+          <div id="menuDrop">
             <ul class="nav-menu">
               <li>
                 <a class="active nav-link" href="#header"
@@ -74,8 +76,11 @@
                 ></a>
               </li>
             </ul>
-          </nav>
+          </div>
+
+        </nav>
         </div>
+
       </section>
       
       <!-- PRINT ONLY SIDEBAR -->
@@ -132,14 +137,22 @@
         <!-- HEADER -->
         <div class="header" id="header">
 
-          <div class="content-inner">
+          <div class="content-inner" id="first-content-inner">
+            <div class="content-inner-img">
+              <img src="img/profile.jpg" alt="Image" />
+            </div>
+
+            <div class="content-inner-text">
             <p>I'm</p>
             <h1>Ranya M.</h1>
             <i class="fa-solid fa-minus"></i>
-            <p>
-              FullStack Developer, Apps Developer, Web Designer, Graphic
-              Designer
-            </p>
+            <div class="text-container">
+              <p id="text"></p> 
+            </div>
+           
+            <span id="role">Fullstack Developper, Apps Developper, Web & graphic Designer</span>
+            </div>
+
           </div>
 
         </div>
@@ -147,7 +160,7 @@
         <div class="main">
           <!-- About Start -->
           <div class="about" id="about">
-            <div class="content-inner">
+            <div class="content-inner" >
               <div class="content-header">
                 <h2>About Me</h2>
                 <i class="fa-solid fa-minus"></i>
@@ -300,17 +313,17 @@
                   <div class="sd-col">
                     <i class="fa fa-laptop"></i>
                     <h3>Coding</h3>
-                    <p>HTML, Css, Javascript, ReactJs, PHP, Laravel.</p>
+                    <p><strong>HTML, Css, Javascript, ReactJs, PHP, Laravel.</strong></p>
                   </div>
 
                   <div class="sd-col">
                     <i class="fa fa-search"></i>
                     <h3>Other Skills</h3>
                     <p>
-                      - Microsoft Office, Writing & Proofreading <br />
-                      - Statistical analysis (Spss, Excel) <br />
-                      - Scientific Research Databases & Software <br />
-                      - Wet Lab Techniques.
+                      - Writing & Proofreading <br />
+                      - Statistical analysis: Spss, Excel <br />
+                      - Research Databases <br />
+                      - Dry & Wet Lab Techniques.
                     </p>
                   </div>
 
@@ -330,97 +343,112 @@
                       Fluent : Arabic (native), French, English <br />
                       Intermediate : Spanish <br />
                       Basic : Russian <br />
-                      Beginner (speaking, listening) : Japanese, Korean.
+                      Basic, spoken : Japanese, Korean.
                     </p>
                   </div>
-                </div>            
+                </div>  
+                
+              </div> 
             </div>
           </div>
           <!-- Skills Details End -->
 
-          <!-- Contact Start -->
-          <div class="contact" id="contact">
-            <div class="content-inner">
-              <div class="content-header">
-                <h2>Contact</h2>
-                <i class="fa-solid fa-minus"></i>
-              </div>
-
-              <div class="content-presentation">
-                
-                  <div class="col">
-                    <p><i class="fa fa-user"></i>Ranya M.</p>
-                    <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
-                    <p>
-                      <i class="fa fa-envelope"></i
-                      ><a href="mailto:ranya.developer.contact@gmail.com"
-                         class="link-no-bg">ranya.developer.contact@gmail.com</a
-                      >
-                    </p>
-                    <p>
-                      <i class="fa fa-phone"></i
-                      ><a href="tel:+00-00000000" class="link-no-bg">+000-0000000</a>
-                    </p>
-                    <p><i class="fa fa-map-marker"></i>Rabat, Morocco</p>
-                    <div class="social">
-                      <a class="btn" href=""
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                      <a class="btn" href=""
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                      <a class="btn" href=""><i class="fab fa-github"></i></a>
+                    <!-- Contact Start -->
+                    <div class="contact" id="contact">
+                      <div class="content-inner">
+                        <div class="content-header">
+                          <h2>Contact</h2>
+                          <i class="fa-solid fa-minus"></i>
+                        </div>
+          
+                        <div class="content-presentation">
+                          
+                            <div class="col">
+                              <p><i class="fa fa-user"></i>Ranya M.</p>
+                              <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
+                              <p>
+                                <i class="fa fa-envelope"></i
+                                ><a href="mailto:ranya.developer.contact@gmail.com"
+                                   class="link-no-bg">ranya.developer.contact@gmail.com</a
+                                >
+                              </p>
+                              <p>
+                                <i class="fa fa-phone"></i
+                                ><a href="tel:+00-00000000" class="link-no-bg">+000-0000000</a>
+                              </p>
+                              <p><i class="fa fa-map-marker"></i>Rabat, Morocco</p>
+                              <div class="social">
+                                <a class="btn" href=""
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                                <a class="btn" href=""
+                                  ><i class="fab fa-instagram"></i
+                                ></a>
+                                <a class="btn" href=""><i class="fab fa-github"></i></a>
+                              </div>
+                            </div>
+                          
+                          <div class="col">
+                            <div class="form">
+                              <form>
+                                  <div class="form-group form-col">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Your Name"
+                                    />
+                                  </div>
+                                  <div class="form-group form-col">
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      placeholder="Your Email"
+                                    />
+                                  </div>
+                                
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Subject"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Message"
+                                  ></textarea>
+                                </div>
+                                <div>
+                                  <button class="btn" type="submit">Send Message</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+          
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                
-                <div class="col">
-                  <div class="form">
-                    <form>
-                        <div class="form-group form-col">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Your Name"
-                          />
-                        </div>
-                        <div class="form-group form-col">
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Your Email"
-                          />
-                        </div>
-                      
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Subject"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <textarea
-                          class="form-control"
-                          rows="5"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                      <div>
-                        <button class="btn" type="submit">Send Message</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                    <!-- Contact End -->
 
-              </div>
-            </div>
-          </div>
-          <!-- Contact End -->
+                    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
         </div>
       </section>
     </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+
+<!--Typed.js CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js">
+</script>
+
+   <script src="./anime.min.js"></script> 
+
+    <script src="./script.js"></script>
+
   </body>
 </html>
