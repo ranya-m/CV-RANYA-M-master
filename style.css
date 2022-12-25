@@ -24,7 +24,9 @@ body {
 
 
 .main-container {
-    background-color:#222222f7;
+    background-color:#222222dd;
+
+    /* background-color:#222222f7; */
     height: fit-content;
     width: 21cm;
     margin: auto;
@@ -64,18 +66,20 @@ a:focus {
 
 .back-to-top {
     float: right;
-    margin-right: 10px;
+    margin-right: 2px;
     margin-bottom: 10px;
     font-size: 1.5em;
+    background-color: white !important;
+    border-radius: 5%;
+    padding: 2px 4px;
 }
 
-.back-to-top:hover,
+/* .back-to-top:hover,
 .back-to-top:active,
 .back-to-top:focus
 {
-    background-color: transparent !important;
-
-}
+       
+} */
 
 
 
@@ -105,12 +109,17 @@ a:focus {
         position: relative;
         width: 100%;
         float: left;
-        background: #222222;  
+        color: #222222;
     }
     
     nav ul {
         padding: 10px;
         margin: 10px 0;
+    }
+
+    .nav-menu {
+        color: #222222;
+        z-index: 3;
     }
 
     nav li {
@@ -646,6 +655,10 @@ textarea {
 
             #header {
                 padding: 0px;
+            }
+
+            .main-container {
+                background-color:#222222c1;
             }
         }
 
