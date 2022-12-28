@@ -615,43 +615,39 @@ textarea {
                 display: flex;
                 padding: 0;
                 margin: 0;
-                height: 177px;
+                height: 130px;
                 gap: 15px;
                 align-items: center;
-                background-color: #222222;
+                background-color:#222222;
             }
 
             .content-inner-img {
                 display:flex;
                 z-index:1;
                 background-color: transparent;
-                width: 108px;
-                padding-left: 35px;
-                margin-right: 20px;
+                width: 70px;
+                padding-left: 20px;
+                margin-right: 0px;
+
             }
 
             .content-inner-img img {
                 background-color: #222222;
-                width: 108px;            
+                width: 70px; 
+                border-radius: 10px;
+                border:#FF6F61 solid 2px;
+                
             }
 
             .content-inner-text { 
-                width: 800px;
-                height: 140px;
+                width: 400px;
+                height: 100px;
                 margin: 0 auto;
-                background-color: white; 
+                background-color:
                 padding: 10px 20px; 
-                max-height: 177px; 
                 overflow-y: auto;
+                line-height: 2px;
             }    
-            
-            /* .sidebar-header {
-                height: 6.5cm;
-            }
-        
-            .sidebar-header img {
-                width: 100%;
-            } */
 
             #header {
                 padding: 0px;
