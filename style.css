@@ -488,14 +488,8 @@ textarea {
 
 /* RESPONSIVE TABLET AND PHONE DISPLAY SPECIFICS */
 
-    /* @media screen and (min-width: 769px) { 
-        /* .sidebar-content {
-            padding: 20px 0;
-        } */
-        /* } */ 
         
         @media screen and (max-width: 769px) {
- 
 
             .hide {
                 display: flex;
@@ -594,7 +588,7 @@ textarea {
 
             .container-right {
                 width: 100%;
-                            
+                font-size: 0.9em;      
             }
 
             .main-container {
@@ -611,46 +605,57 @@ textarea {
                 height: 20%;
             }
 
-            #first-content-inner {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                height: 130px;
-                gap: 15px;
-                align-items: center;
-                background-color:#222222;
-            }
-
             .content-inner-img {
                 display:flex;
                 z-index:1;
-                background-color: transparent;
-                width: 70px;
-                padding-left: 20px;
+                width: 80px;
                 margin-right: 0px;
-
+                background-color: #222222;
+                border: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;   
             }
 
             .content-inner-img img {
                 background-color: #222222;
-                width: 70px; 
-                border-radius: 10px;
-                border:#FF6F61 solid 2px;
-                
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border: solid #FF6F61 2px;
             }
 
             .content-inner-text { 
-                width: 400px;
-                height: 100px;
-                margin: 0 auto;
-                background-color:
+                width: 60%;
+                height: 128.2px;
+                margin: 0;
                 padding: 10px 20px; 
                 overflow-y: auto;
                 line-height: 2px;
+                background-color: #fcfcfcbe;
+                font-size: 0.9em;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                
             }    
 
+            
+
             #header {
+                display: flex;
                 padding: 0px;
+                background-color:#2222229b;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            #first-content-inner {
+                display: flex;
+                margin: 0 auto;
+                width: 70%;
+                align-items: center;
+                justify-content: center;
+                gap: 0px;
             }
 
             .main-container {
